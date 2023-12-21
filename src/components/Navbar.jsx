@@ -5,26 +5,20 @@ import logo from "../images/AgileLogo.png"; // Adjust the path based on your act
 import "./Navbar.css"; // Import your CSS file
 
 const Navbar = () => {
+  const links = ["Home", "Contact", "Services", "About"];
   return (
     <nav>
       <div>
         <img src={logo} alt="Logo" height="50px" />
       </div>
       <h1 className="logo-text">Agile Craft</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+      {links.map((item) => (
+        <ul key={item.id}>
+          <li>
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        </ul>
+      ))}
       <div className="button-container">
         <Link to="/login">
           <button className="login-button">LogIn</button>

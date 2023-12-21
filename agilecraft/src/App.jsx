@@ -7,8 +7,9 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
-import SignUp from "./components/Signup";
+import SignUp from "./components/SignUp";
 const App = () => {
+  const links = ["home", "services", "about", "contact", "login", "signup"];
   return (
     <Router>
       <Navbar />
