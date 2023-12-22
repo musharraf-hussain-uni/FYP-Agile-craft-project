@@ -1,13 +1,15 @@
 /* src/components/Navbar.css */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html , body{
-    height: 100%;
-    width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 nav {
   display: flex;
@@ -35,7 +37,11 @@ nav {
   position: absolute;
   font-size: 23px; /* Adjust the font size as needed */
   left: 80px; /* Remove default margin on h1 */
-  background: linear-gradient(to right, #093148, #7da0d4); /* Adjust the gradient colors as needed */
+  background: linear-gradient(
+    to right,
+    #093148,
+    #7da0d4
+  ); /* Adjust the gradient colors as needed */
   -webkit-background-clip: text;
   color: transparent;
   word-spacing: -3px;
@@ -86,8 +92,8 @@ ul li a:hover::after {
   gap: 15px;
 }
 
-.login-button{
-padding: 10px 30px;
+.login-button {
+  padding: 10px 30px;
   border: 2px solid #2980b9;
   background-color: #fff;
   border-radius: 24px;
@@ -97,7 +103,7 @@ padding: 10px 30px;
   color: #2980b9;
   font-size: 17px;
 }
-.signup-button{
+.signup-button {
   padding: 10px 30px;
   border: 2px solid #2980b9;
   background-color: #2980b9;
@@ -109,14 +115,12 @@ padding: 10px 30px;
   font-size: 17px;
 }
 
-
 .login-button:hover {
   background-color: #2980b9; /* Adjust the hover background color for buttons */
   color: #fff;
 }
 
-.signup-button:hover{
-background-color: #fff;
-color:#2980b9;
+.signup-button:hover {
+  background-color: #fff;
+  color: #2980b9;
 }
-
