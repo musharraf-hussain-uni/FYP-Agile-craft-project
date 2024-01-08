@@ -29,7 +29,7 @@ const Login = () => {
 
       const data = await response.json();
       setData(data.message);
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       setError(error.message.slice(20, 25));
     }
