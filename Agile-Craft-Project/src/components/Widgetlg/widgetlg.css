@@ -1,0 +1,48 @@
+.widget-large {
+  flex: 2;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.widget-large-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+.widget-large-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.widget-large-table {
+  width: 100%;
+  border-spacing: 20px;
+}
+.widget-large-btn {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.widget-large-table-head {
+  text-align: left;
+}
+.widget-large-table-user {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.widget-large-table-date,
+.widget-large-table-amount {
+  font-weight: 300;
+}
+.widget-large-btn.Approved {
+  background-color: #e5faf2;
+}
+.widget-large-btn.Decline {
+  background-color: #fee4e6;
+}
+.widget-large-btn.Pending {
+  background-color: #ebf1fe;
+}

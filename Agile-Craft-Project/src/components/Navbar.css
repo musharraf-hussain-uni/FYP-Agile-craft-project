@@ -1,0 +1,140 @@
+/* Assuming this is in a separate CSS file, e.g., Navbar.css */
+
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body and HTML */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Styling for the entire navigation bar */
+nav {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px;
+}
+nav.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjust the box shadow as needed */
+}
+
+/* Styling for the logo container */
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the logo text */
+.logo-text {
+  text-transform: uppercase;
+  font-size: 23px;
+  background: linear-gradient(to right, #093148, #7da0d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  word-spacing: -7px;
+  margin-left: -130px;
+}
+
+/* Styling for the list items in the navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+/* Styling for each list item */
+nav ul li {
+  margin: 10px;
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 100;
+  font-size: 19px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the underline effect on hover */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: transparent;
+  transition: width 0.3s ease;
+}
+
+/* Styling for the hover effect on navigation links */
+nav ul li a:hover {
+  color: #003175;
+}
+
+/* Styling for the hover effect on the underline */
+nav ul li a:hover::after {
+  background-color: #003175;
+  width: 100%;
+}
+
+/* Styling for the button container */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styling for the login button */
+.login-button {
+  padding: 8px 20px;
+  border: 2px solid #003175;
+  background-color: #fff;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #003175;
+}
+
+/* Styling for the signup button */
+.signUp-button {
+  padding: 8px 20px;
+  border: 2px solid #003175;
+  background-color: #003175;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #fff;
+}
+
+/* Styling for the hover effect on the login button */
+.login-button:hover {
+  background-color: #003175;
+  color: #fff;
+}
+
+/* Styling for the hover effect on the signup button */
+.signUp-button:hover {
+  background-color: #fff;
+  color: #003175;
+}
+
+a{
+}
