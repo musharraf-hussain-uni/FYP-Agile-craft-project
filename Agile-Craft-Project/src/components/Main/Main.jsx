@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import heroImg from "../../images/web-dev.svg";
 
 import heroBg from "../../images/hero-bg.svg";

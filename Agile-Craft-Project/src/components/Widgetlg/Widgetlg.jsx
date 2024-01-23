@@ -17,10 +17,7 @@ const Widgetlg = () => {
         </tr>
         <tr className="widget-large-table-row">
           <td className="widget-large-table-user">
-            <img
-              src="https://i.cbc.ca/1.6654179.1668638502!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1243560848.jpg"
-              className="widget-large-img"
-            />
+            <img src="" className="widget-large-img" />
             <span className="widget-large-username">Leo Messi</span>
           </td>
           <td className="widget-large-table-date">21-02-2022</td>
@@ -31,10 +28,7 @@ const Widgetlg = () => {
         </tr>
         <tr className="widget-large-table-row">
           <td className="widget-large-table-user">
-            <img
-              src="https://i.cbc.ca/1.6654179.1668638502!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1243560848.jpg"
-              className="widget-large-img"
-            />
+            <img src="" className="widget-large-img" />
             <span className="widget-large-username">Leo Messi</span>
           </td>
           <td className="widget-large-table-date">21-02-2022</td>
@@ -45,10 +39,7 @@ const Widgetlg = () => {
         </tr>
         <tr className="widget-large-table-row">
           <td className="widget-large-table-user">
-            <img
-              src="https://i.cbc.ca/1.6654179.1668638502!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1243560848.jpg"
-              className="widget-large-img"
-            />
+            <img src="" className="widget-large-img" />
             <span className="widget-large-username">Leo Messi</span>
           </td>
           <td className="widget-large-table-date">21-02-2022</td>

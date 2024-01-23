@@ -1,13 +1,15 @@
 // Login.jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Login.css"; // Import the CSS file for styling
 import { Link } from "react-router-dom";
 import vectorLogin from "./vectorLogin.png"; // Adjust the path based on your actual file structure
 import { useNavigate } from "react-router-dom";
+import Dropdown from "../../components/dropdownRole/Dropdown";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [selectedRole, setSelectedRole] = useState("");
   const [data, setData] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -87,18 +89,21 @@ const Login = () => {
                 </div>
                 <aside>Forgot password?</aside>
               </div>
-
-              <button type="submit">Log In</button>
+              {/* Role Dropdown */}
+              <Dropdown
+                value={selectedRole}
+                onChange={(e) => setSelectedRole(e.target.value)}
+              />
+              <button type="submit">
+                Log In {selectedRole === "admin" ? "(Admin)" : ""}{" "}
+                {selectedRole === "employee" ? "(Employee)" : ""}
+              </button>
 
               <div className="create-account">
                 <p>New on our Platform?</p>
                 <Link to="/register">Create an account</Link>
               </div>
             </form>
-            {/* Social Links */}
-            <div className="social-links">
-              {/* Add your social media icons or links here */}
-            </div>
           </div>
         </div>
       </div>

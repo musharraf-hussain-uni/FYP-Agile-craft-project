@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Main from "../../components/Main/Main";
-import Cta from "../../components/Cta";
 import Intro from "../../components/Introduction/Intro";
 
 const Home = () => {

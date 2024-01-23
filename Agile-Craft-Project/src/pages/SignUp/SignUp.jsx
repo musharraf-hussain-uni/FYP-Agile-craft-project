@@ -1,5 +1,5 @@
 // Login.jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SignUp.css"; // Import the CSS file for styling
 import { Link } from "react-router-dom";
 import vectorSignUp from "./vectorSignUp.png"; // Adjust the path based on your actual file structure
@@ -124,11 +124,6 @@ const SignUp = () => {
                 <Link to="/login">LogIn</Link>
               </div>
             </form>
-
-            {/* Social Links */}
-            <div className="social-links">
-              {/* Add your social media icons or links here */}
-            </div>
           </div>
         </div>
       </div>

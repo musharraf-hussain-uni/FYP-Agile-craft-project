@@ -3,11 +3,14 @@
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   padding: 20px;
+  background-color: var(--bgSoft);
+  border-radius: 10px;
 }
 .widget-large-title {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 60;
   margin: 0;
+  color: var(--text);
 }
 .widget-large-img {
   width: 50px;
@@ -27,22 +30,28 @@
 }
 .widget-large-table-head {
   text-align: left;
+  color: var(--textSoft);
 }
 .widget-large-table-user {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 100;
+}
+
+.widget-large-username{
+  color: var(--text);
 }
 .widget-large-table-date,
 .widget-large-table-amount {
   font-weight: 300;
+  color: var(--text);
 }
 .widget-large-btn.Approved {
-  background-color: #e5faf2;
+  background-color: #038352;
 }
 .widget-large-btn.Decline {
-  background-color: #fee4e6;
+  background-color: #ff808a;
 }
 .widget-large-btn.Pending {
-  background-color: #ebf1fe;
+  background-color: #7ca6fa;
 }
